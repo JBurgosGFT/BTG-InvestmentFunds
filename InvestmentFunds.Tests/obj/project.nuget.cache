@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8u1gGgX1yQE=",
+  "dgSpecHash": "+wwDxAwq11o=",
   "success": true,
-  "projectFilePath": "c:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Tests\\InvestmentFunds.Tests.csproj",
+  "projectFilePath": "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Tests\\InvestmentFunds.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jauu\\.nuget\\packages\\awssdk.core\\4.0.0.23\\awssdk.core.4.0.0.23.nupkg.sha512",
     "C:\\Users\\jauu\\.nuget\\packages\\awssdk.dynamodbv2\\4.0.4.1\\awssdk.dynamodbv2.4.0.4.1.nupkg.sha512",
@@ -15,6 +15,7 @@
     "C:\\Users\\jauu\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\jauu\\.nuget\\packages\\fluentassertions\\8.6.0\\fluentassertions.8.6.0.nupkg.sha512",
     "C:\\Users\\jauu\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
+    "C:\\Users\\jauu\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.0.0\\fluentvalidation.dependencyinjectionextensions.12.0.0.nupkg.sha512",
     "C:\\Users\\jauu\\.nuget\\packages\\mediatr\\13.0.0\\mediatr.13.0.0.nupkg.sha512",
     "C:\\Users\\jauu\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\jauu\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",

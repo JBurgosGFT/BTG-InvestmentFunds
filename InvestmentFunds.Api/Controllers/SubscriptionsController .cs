@@ -14,6 +14,7 @@ public class SubscriptionsController : ControllerBase
     public SubscriptionsController(IMediator mediator) => _mediator = mediator;
 
     [HttpPost("subscribe")]
+    [Authorize(Policy = "Investor")]
     public async Task<IActionResult> Subscribe([FromBody] SubscribeCommand cmd, CancellationToken cancellationToken)
     {
         var id = await _mediator.Send(cmd, cancellationToken);
@@ -24,6 +25,7 @@ public class SubscriptionsController : ControllerBase
     }
 
     [HttpGet("unsubscribe/{subscriptionId}")]
+    [Authorize(Policy = "Investor")]
     public async Task<IActionResult> CancelSubscription([FromRoute] Guid subscriptionId, CancellationToken cancellationToken)
     {
         var cmd = new UnsubscribeCommand { SubscriptionId = subscriptionId };
