@@ -1003,11 +1003,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Infrastructure\\InvestmentFunds.Infrastructure.csproj",
+      "projectUniqueName": "c:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Infrastructure\\InvestmentFunds.Infrastructure.csproj",
       "projectName": "InvestmentFunds.Infrastructure",
-      "projectPath": "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Infrastructure\\InvestmentFunds.Infrastructure.csproj",
+      "projectPath": "c:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Infrastructure\\InvestmentFunds.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\jauu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Infrastructure\\obj\\",
+      "outputPath": "c:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jauu\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1022,8 +1022,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\InvestmentFunds.Application.csproj": {
-              "projectPath": "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\InvestmentFunds.Application.csproj"
+            "c:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\InvestmentFunds.Application.csproj": {
+              "projectPath": "c:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\InvestmentFunds.Application.csproj"
             },
             "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Domain\\InvestmentFunds.Domain.csproj": {
               "projectPath": "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Domain\\InvestmentFunds.Domain.csproj"

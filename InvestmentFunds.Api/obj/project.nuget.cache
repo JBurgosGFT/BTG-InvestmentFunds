@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "0xtoV0NzLhw=",
-  "success": false,
+  "dgSpecHash": "rpJfmmt6zwo=",
+  "success": true,
   "projectFilePath": "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Api\\InvestmentFunds.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jauu\\.nuget\\packages\\awssdk.core\\4.0.0.23\\awssdk.core.4.0.0.23.nupkg.sha512",
@@ -15,7 +15,6 @@
     "C:\\Users\\jauu\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.0.0\\fluentvalidation.dependencyinjectionextensions.12.0.0.nupkg.sha512",
     "C:\\Users\\jauu\\.nuget\\packages\\mediatr\\13.0.0\\mediatr.13.0.0.nupkg.sha512",
     "C:\\Users\\jauu\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\jauu\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\jauu\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.0\\microsoft.aspnetcore.authentication.jwtbearer.8.0.0.nupkg.sha512",
     "C:\\Users\\jauu\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.19\\microsoft.aspnetcore.openapi.8.0.19.nupkg.sha512",
     "C:\\Users\\jauu\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
@@ -57,15 +56,5 @@
     "C:\\Users\\jauu\\.nuget\\packages\\system.text.encodings.web\\9.0.0\\system.text.encodings.web.9.0.0.nupkg.sha512",
     "C:\\Users\\jauu\\.nuget\\packages\\system.text.json\\9.0.0\\system.text.json.9.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1107",
-      "level": "Error",
-      "message": "Version conflict detected for MediatR. Install/reference MediatR 13.0.0 directly to project InvestmentFunds.Api to resolve this issue. \r\n InvestmentFunds.Api -> InvestmentFunds.Application -> MediatR (>= 13.0.0) \r\n InvestmentFunds.Api -> MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 -> MediatR (>= 11.0.0 && < 12.0.0).",
-      "libraryId": "MediatR",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }

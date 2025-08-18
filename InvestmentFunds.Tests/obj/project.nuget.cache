@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UvinZtMBAJc=",
+  "dgSpecHash": "8u1gGgX1yQE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Tests\\InvestmentFunds.Tests.csproj",
+  "projectFilePath": "c:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Tests\\InvestmentFunds.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jauu\\.nuget\\packages\\awssdk.core\\4.0.0.23\\awssdk.core.4.0.0.23.nupkg.sha512",
     "C:\\Users\\jauu\\.nuget\\packages\\awssdk.dynamodbv2\\4.0.4.1\\awssdk.dynamodbv2.4.0.4.1.nupkg.sha512",

@@ -179,19 +179,6 @@
           }
         }
       },
-      "MediatR.Extensions.Microsoft.DependencyInjection/11.1.0": {
-        "type": "package",
-        "dependencies": {
-          "MediatR": "[11.0.0, 12.0.0)",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
-        }
-      },
       "Microsoft.AspNetCore.Authentication.JwtBearer/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -1206,19 +1193,6 @@
         "lib/netstandard2.0/MediatR.Contracts.xml",
         "mediatr.contracts.2.0.1.nupkg.sha512",
         "mediatr.contracts.nuspec"
-      ]
-    },
-    "MediatR.Extensions.Microsoft.DependencyInjection/11.1.0": {
-      "sha512": "RW3etRuy6Xp63cgqfC0r/ITOtUT0f9ymJl1+1XZdzsYUsfv7WBPC2kXGOP8IYpY/6c4Q6805vbIW/88DopUs3w==",
-      "type": "package",
-      "path": "mediatr.extensions.microsoft.dependencyinjection/11.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "gradient_128x128.png",
-        "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll",
-        "mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
-        "mediatr.extensions.microsoft.dependencyinjection.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/8.0.0": {
@@ -2565,7 +2539,7 @@
       "FluentValidation.DependencyInjectionExtensions >= 12.0.0",
       "InvestmentFunds.Application >= 1.0.0",
       "InvestmentFunds.Infrastructure >= 1.0.0",
-      "MediatR.Extensions.Microsoft.DependencyInjection >= 11.1.0",
+      "MediatR >= 13.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.19",
       "Serilog.AspNetCore >= 9.0.0",
@@ -2600,8 +2574,8 @@
             "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\InvestmentFunds.Application.csproj": {
               "projectPath": "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\InvestmentFunds.Application.csproj"
             },
-            "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Infrastructure\\InvestmentFunds.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Infrastructure\\InvestmentFunds.Infrastructure.csproj"
+            "c:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Infrastructure\\InvestmentFunds.Infrastructure.csproj": {
+              "projectPath": "c:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Infrastructure\\InvestmentFunds.Infrastructure.csproj"
             }
           }
         }
@@ -2625,9 +2599,9 @@
             "target": "Package",
             "version": "[12.0.0, )"
           },
-          "MediatR.Extensions.Microsoft.DependencyInjection": {
+          "MediatR": {
             "target": "Package",
-            "version": "[11.1.0, )"
+            "version": "[13.0.0, )"
           },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
@@ -2668,16 +2642,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1107",
-      "level": "Error",
-      "message": "Version conflict detected for MediatR. Install/reference MediatR 13.0.0 directly to project InvestmentFunds.Api to resolve this issue. \r\n InvestmentFunds.Api -> InvestmentFunds.Application -> MediatR (>= 13.0.0) \r\n InvestmentFunds.Api -> MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 -> MediatR (>= 11.0.0 && < 12.0.0).",
-      "libraryId": "MediatR",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  }
 }

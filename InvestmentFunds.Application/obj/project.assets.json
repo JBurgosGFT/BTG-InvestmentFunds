@@ -638,11 +638,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\InvestmentFunds.Application.csproj",
+      "projectUniqueName": "c:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\InvestmentFunds.Application.csproj",
       "projectName": "InvestmentFunds.Application",
-      "projectPath": "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\InvestmentFunds.Application.csproj",
+      "projectPath": "c:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\InvestmentFunds.Application.csproj",
       "packagesPath": "C:\\Users\\jauu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\obj\\",
+      "outputPath": "c:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jauu\\AppData\\Roaming\\NuGet\\NuGet.Config"
