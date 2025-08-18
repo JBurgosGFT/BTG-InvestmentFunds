@@ -15,6 +15,7 @@ public class TransactionsController : ControllerBase
     public TransactionsController(IMediator mediator) => _mediator = mediator;
 
     [HttpGet("by-customer")]
+    [Authorize(Policy = "Investor")]
     public async Task<IActionResult> GetTransactions([FromQuery] Guid customerId, [FromQuery] TransactionType type)
     {
         var result = await _mediator.Send(new GetTransactionsQuery { CustomerId = customerId, Type = type });
@@ -22,6 +23,7 @@ public class TransactionsController : ControllerBase
     }
 
     [HttpGet("all")]
+    [Authorize(Policy = "Investor")]
     public async Task<IActionResult> GetAllTransactions([FromQuery] DateTime startDate, [FromQuery] DateTime endDate, [FromQuery] TransactionType type)
     {
         var result = await _mediator.Send(new GetAllTransactionsQuery { StartDate = startDate, EndDate = endDate, Type = type });

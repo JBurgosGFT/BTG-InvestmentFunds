@@ -1,0 +1,215 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: >
+  Infraestructura para InvestmentFunds.Api.
+  Incluye DynamoDB, Cognito, Secrets Manager y documentación de recursos.
+  Además, incluye instrucciones para poblar la tabla de fondos con datos iniciales.
+
+Parameters:
+  DynamoDBBillingMode:
+    Type: String
+    Default: PAY_PER_REQUEST
+    AllowedValues:
+      - PAY_PER_REQUEST
+      - PROVISIONED
+    Description: Modo de facturación para las tablas DynamoDB.
+
+Resources:
+
+  # DynamoDB Tables
+  CustomersTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: Customers
+      BillingMode: !Ref DynamoDBBillingMode
+      AttributeDefinitions:
+        - AttributeName: CustomerId
+          AttributeType: S
+      KeySchema:
+        - AttributeName: CustomerId
+          KeyType: HASH
+
+  FundsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: Funds
+      BillingMode: !Ref DynamoDBBillingMode
+      AttributeDefinitions:
+        - AttributeName: FundId
+          AttributeType: N
+      KeySchema:
+        - AttributeName: FundId
+          KeyType: HASH
+  
+  FundsItem1:
+    Type: AWS::DynamoDB::TableItem
+    Properties:
+      TableName: !Ref FundsTable
+      Item:
+        FundId: 1
+        Name: FPV_BTG_PACTUAL_RECAUDADORA
+        MinAmount: 75000
+        MinAmountCents: 7500000
+
+  FundsItem2:
+    Type: AWS::DynamoDB::TableItem
+    Properties:
+      TableName: !Ref FundsTable
+      Item:
+        FundId: 2
+        Name: FPV_BTG_PACTUAL_ECOPETROL
+        MinAmount: 125000
+        MinAmountCents: 12500000
+
+  FundsItem3:
+    Type: AWS::DynamoDB::TableItem
+    Properties:
+      TableName: !Ref FundsTable
+      Item:
+        FundId: 3
+        Name: DEUDAPRIVADA
+        MinAmount: 50000
+        MinAmountCents: 5000000
+
+  FundsItem4:
+    Type: AWS::DynamoDB::TableItem
+    Properties:
+      TableName: !Ref FundsTable
+      Item:
+        FundId: 4
+        Name: FDO-ACCIONES
+        MinAmount: 250000
+        MinAmountCents: 25000000
+
+  FundsItem5:
+    Type: AWS::DynamoDB::TableItem
+    Properties:
+      TableName: !Ref FundsTable
+      Item:
+        FundId: 5
+        Name: FPV_BTG_PACTUAL_DINAMICA
+        MinAmount: 100000
+        MinAmountCents: 10000000
+
+  SubscriptionsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: Subscriptions
+      BillingMode: !Ref DynamoDBBillingMode
+      AttributeDefinitions:
+        - AttributeName: SubscriptionId
+          AttributeType: S
+        - AttributeName: CustomerId
+          AttributeType: S
+        - AttributeName: FundId
+          AttributeType: N
+      KeySchema:
+        - AttributeName: SubscriptionId
+          KeyType: HASH
+      GlobalSecondaryIndexes:
+        - IndexName: CustomerId-index
+          KeySchema:
+            - AttributeName: CustomerId
+              KeyType: HASH
+          Projection:
+            ProjectionType: ALL
+        - IndexName: FundId-index
+          KeySchema:
+            - AttributeName: FundId
+              KeyType: HASH
+          Projection:
+            ProjectionType: ALL
+
+  TransactionsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: Transactions
+      BillingMode: !Ref DynamoDBBillingMode
+      AttributeDefinitions:
+        - AttributeName: TransactionId
+          AttributeType: S
+        - AttributeName: CustomerId
+          AttributeType: S
+        - AttributeName: FundId
+          AttributeType: N
+      KeySchema:
+        - AttributeName: TransactionId
+          KeyType: HASH
+      GlobalSecondaryIndexes:
+        - IndexName: CustomerId-index
+          KeySchema:
+            - AttributeName: CustomerId
+              KeyType: HASH
+          Projection:
+            ProjectionType: ALL
+        - IndexName: FundId-index
+          KeySchema:
+            - AttributeName: FundId
+              KeyType: HASH
+          Projection:
+            ProjectionType: ALL
+
+  # Cognito User Pool
+  CognitoUserPool:
+    Type: AWS::Cognito::UserPool
+    Properties:
+      UserPoolName: investmentfunds-user-pool
+
+  CognitoUserPoolClient:
+    Type: AWS::Cognito::UserPoolClient
+    Properties:
+      ClientName: investmentfunds-client
+      UserPoolId: !Ref CognitoUserPool
+      GenerateSecret: true
+      AllowedOAuthFlows:
+        - client_credentials
+      AllowedOAuthScopes:
+        - email
+        - openid
+        - profile
+      SupportedIdentityProviders:
+        - COGNITO
+
+  # Secrets Manager
+  CognitoAuthoritySecret:
+    Type: AWS::SecretsManager::Secret
+    Properties:
+      Name: CognitoAuthoritySecret
+      Description: Cognito authority endpoint for API authentication.
+
+  CognitoAuthoritySecretValue:
+    Type: AWS::SecretsManager::SecretTargetAttachment
+    Properties:
+      SecretId: !Ref CognitoAuthoritySecret
+      TargetId: !Ref CognitoUserPool
+      TargetType: AWS::Cognito::UserPool
+
+
+Outputs:
+  CustomersTableName:
+    Description: Nombre de la tabla DynamoDB para clientes.
+    Value: !Ref CustomersTable
+
+  FundsTableName:
+    Description: Nombre de la tabla DynamoDB para fondos.
+    Value: !Ref FundsTable
+
+  SubscriptionsTableName:
+    Description: Nombre de la tabla DynamoDB para suscripciones.
+    Value: !Ref SubscriptionsTable
+
+  TransactionsTableName:
+    Description: Nombre de la tabla DynamoDB para transacciones.
+    Value: !Ref TransactionsTable
+
+  CognitoUserPoolId:
+    Description: ID del User Pool de Cognito.
+    Value: !Ref CognitoUserPool
+
+  CognitoUserPoolClientId:
+    Description: ID del cliente de Cognito.
+    Value: !Ref CognitoUserPoolClient
+
+  CognitoAuthoritySecretArn:
+    Description: ARN del secreto de Cognito Authority.
+    Value: !Ref CognitoAuthoritySecret
+
