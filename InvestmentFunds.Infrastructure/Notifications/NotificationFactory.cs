@@ -5,7 +5,7 @@ namespace InvestmentFunds.Infrastructure.Notifications;
 
 public class NotificationFactory
 {
-     private readonly EmailNotificationStrategy _email;
+    private readonly EmailNotificationStrategy _email;
     private readonly SMSNotificationStrategy _sms;
     public NotificationFactory(EmailNotificationStrategy email, SMSNotificationStrategy sms)
     {
