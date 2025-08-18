@@ -1,6 +1,7 @@
 using Amazon.DynamoDBv2;
 using Amazon.SecretsManager;
 using Amazon.SimpleEmail;
+using Amazon.SimpleNotificationService;
 using InvestmentFunds.Application.Interfaces;
 using InvestmentFunds.Infrastructure.Notifications;
 using InvestmentFunds.Infrastructure.Repositories;
@@ -13,16 +14,14 @@ public static class ServicesExtensions
 {
     public static IServiceCollection AddInfrastructureServices(this IServiceCollection services)
     {
-        // AWS SDK clients
         services.AddAWSService<IAmazonDynamoDB>();
         services.AddAWSService<IAmazonSecretsManager>();
         services.AddAWSService<IAmazonSimpleEmailService>();
+        services.AddAWSService<IAmazonSimpleNotificationService>();
 
-        // Infrastructure services
         services.AddSingleton<DynamoDbService>();
         services.AddSingleton<AwsSecretManagerService>();
 
-        // Repositories
         services.AddScoped<ICustomerRepository, DynamoDbCustomerRepository>();
         services.AddScoped<IFundRepository, DynamoDbFundRepository>();
         services.AddScoped<ISubscriptionRepository, DynamoDbSubscriptionRepository>();

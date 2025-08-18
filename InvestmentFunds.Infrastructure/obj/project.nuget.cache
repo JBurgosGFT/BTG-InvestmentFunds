@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KIQqVDI2yB4=",
+  "dgSpecHash": "nQDxKxYCNPg=",
   "success": true,
   "projectFilePath": "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Infrastructure\\InvestmentFunds.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\jauu\\.nuget\\packages\\awssdk.simpleemail\\4.0.0.19\\awssdk.simpleemail.4.0.0.19.nupkg.sha512",
     "C:\\Users\\jauu\\.nuget\\packages\\awssdk.simplenotificationservice\\4.0.0.20\\awssdk.simplenotificationservice.4.0.0.20.nupkg.sha512",
     "C:\\Users\\jauu\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
+    "C:\\Users\\jauu\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.0.0\\fluentvalidation.dependencyinjectionextensions.12.0.0.nupkg.sha512",
     "C:\\Users\\jauu\\.nuget\\packages\\mediatr\\13.0.0\\mediatr.13.0.0.nupkg.sha512",
     "C:\\Users\\jauu\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\jauu\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.0.0\\microsoft.extensions.configuration.abstractions.2.0.0.nupkg.sha512",

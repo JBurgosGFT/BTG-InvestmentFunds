@@ -4,14 +4,14 @@
     "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Infrastructure\\InvestmentFunds.Infrastructure.csproj": {}
   },
   "projects": {
-    "c:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\InvestmentFunds.Application.csproj": {
+    "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\InvestmentFunds.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\InvestmentFunds.Application.csproj",
+        "projectUniqueName": "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\InvestmentFunds.Application.csproj",
         "projectName": "InvestmentFunds.Application",
-        "projectPath": "c:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\InvestmentFunds.Application.csproj",
+        "projectPath": "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\InvestmentFunds.Application.csproj",
         "packagesPath": "C:\\Users\\jauu\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\obj\\",
+        "outputPath": "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jauu\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -48,6 +48,10 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "FluentValidation": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
               "target": "Package",
               "version": "[12.0.0, )"
             },
@@ -156,8 +160,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "c:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\InvestmentFunds.Application.csproj": {
-                "projectPath": "c:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\InvestmentFunds.Application.csproj"
+              "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\InvestmentFunds.Application.csproj": {
+                "projectPath": "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\InvestmentFunds.Application.csproj"
               },
               "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Domain\\InvestmentFunds.Domain.csproj": {
                 "projectPath": "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Domain\\InvestmentFunds.Domain.csproj"
