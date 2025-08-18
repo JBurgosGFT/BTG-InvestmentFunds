@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "dgSpecHash": "6HiXkaHFSAM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Infrastructure\\InvestmentFunds.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jauu\\.nuget\\packages\\awssdk.core\\4.0.0.23\\awssdk.core.4.0.0.23.nupkg.sha512",
+    "C:\\Users\\jauu\\.nuget\\packages\\awssdk.dynamodbv2\\4.0.4.1\\awssdk.dynamodbv2.4.0.4.1.nupkg.sha512",
+    "C:\\Users\\jauu\\.nuget\\packages\\awssdk.extensions.netcore.setup\\4.0.2.1\\awssdk.extensions.netcore.setup.4.0.2.1.nupkg.sha512",
+    "C:\\Users\\jauu\\.nuget\\packages\\awssdk.keymanagementservice\\4.0.3.13\\awssdk.keymanagementservice.4.0.3.13.nupkg.sha512",
+    "C:\\Users\\jauu\\.nuget\\packages\\awssdk.secretsmanager\\4.0.0.19\\awssdk.secretsmanager.4.0.0.19.nupkg.sha512",
+    "C:\\Users\\jauu\\.nuget\\packages\\awssdk.simpleemail\\4.0.0.19\\awssdk.simpleemail.4.0.0.19.nupkg.sha512",
+    "C:\\Users\\jauu\\.nuget\\packages\\awssdk.simplenotificationservice\\4.0.0.20\\awssdk.simplenotificationservice.4.0.0.20.nupkg.sha512",
+    "C:\\Users\\jauu\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
+    "C:\\Users\\jauu\\.nuget\\packages\\mediatr\\13.0.0\\mediatr.13.0.0.nupkg.sha512",
+    "C:\\Users\\jauu\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\jauu\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.0.0\\microsoft.extensions.configuration.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\jauu\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\jauu\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\jauu\\.nuget\\packages\\microsoft.extensions.logging\\8.0.0\\microsoft.extensions.logging.8.0.0.nupkg.sha512",
+    "C:\\Users\\jauu\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\jauu\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "C:\\Users\\jauu\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\jauu\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.0.1\\microsoft.identitymodel.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\jauu\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.0.1\\microsoft.identitymodel.jsonwebtokens.8.0.1.nupkg.sha512",
+    "C:\\Users\\jauu\\.nuget\\packages\\microsoft.identitymodel.logging\\8.0.1\\microsoft.identitymodel.logging.8.0.1.nupkg.sha512",
+    "C:\\Users\\jauu\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.0.1\\microsoft.identitymodel.tokens.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
