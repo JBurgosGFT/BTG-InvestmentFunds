@@ -83,6 +83,7 @@ GET /api/transactions?customerId=GUID&type=Opening
 - .NET 8+
 - AWS DynamoDB
 - AWS Cognito
+- AWS Secret Manager
 - Visual Studio Code o Visual Studio
 
 ---

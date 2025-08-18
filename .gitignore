@@ -1,0 +1,54 @@
+# .NET build artifacts
+bin/
+obj/
+out/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code settings
+.vscode/
+
+# AWS credentials
+*.aws/
+aws-credentials.json
+
+# Logs
+*.log
+
+# Test results
+TestResults/
+*.trx
+
+# Coverage reports
+coverage/
+*.coverage
+*.coveragexml
+
+# Packages
+*.nupkg
+packages/
+.nuget/
+
+# IDE files
+*.DS_Store
+*.idea/
+*.vs/
+
+# Environment files
+.env
+.env.*
+
+# Node modules (if any frontend)
+node_modules/
+
+# Others
+*.swp
+*.bak
+*.tmp
+
+# Ignore secrets
+secrets.json
+
+# Ignore generated files
