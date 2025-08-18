@@ -1,5 +1,4 @@
 using InvestmentFunds.Domain.Entities;
-using InvestmentFunds.Infrastructure.PersistenceModels;
 
 public static class CustomerMapper
 {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "40FuFcUmgSE=",
+  "dgSpecHash": "g7fe33j9B+w=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\InvestmentFunds.Application.csproj",
+  "projectFilePath": "c:\\Users\\jauu\\Downloads\\BTG\\InvestmentFunds.Application\\InvestmentFunds.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jauu\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
     "C:\\Users\\jauu\\.nuget\\packages\\mediatr\\13.0.0\\mediatr.13.0.0.nupkg.sha512",

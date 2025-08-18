@@ -11,7 +11,7 @@ builder.Services.AddInfrastructureServices();
 var app = builder.Build();
 
 var secretManager = app.Services.GetRequiredService<AwsSecretManagerService>();
-var cognitoAuthority = await secretManager.GetSecretAsync(app.Configuration["AWS:CognitoAuthoritySecretName"]);
+var cognitoAuthority = await secretManager.GetSecretAsync(app.Configuration["AWS:CognitoAuthoritySecretName"]!);
 
 builder.Services.AddAuthentication("Bearer")
     .AddJwtBearer(options =>

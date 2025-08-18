@@ -1,6 +1,6 @@
 # InvestmentFunds.Api
 
-API para la gestión de fondos de inversión, clientes, suscripciones, transacciones y notificaciones, utilizando .NET, MediatR y DynamoDB.
+API para la gestión de fondos de inversión, clientes, suscripciones, transacciones y notificaciones, utilizando .NET 8, Arquitectura Limpia (Clean Code), DDD (Domain-Driven Design) Patrones de diseño (Factory, Strategy, CQRS) con MediatR y Servicios de AWS (DynamoDB, Cognito, SecretManager).
 
 ---
 
