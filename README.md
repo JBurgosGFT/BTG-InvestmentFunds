@@ -1,6 +1,6 @@
 # InvestmentFunds.Api
 
-API para la gestión de fondos de inversión, clientes, suscripciones, transacciones y notificaciones, utilizando .NET 8, Arquitectura Limpia (Clean Code), DDD (Domain-Driven Design) Patrones de diseño (Factory, Strategy, CQRS) con MediatR y Servicios de AWS (DynamoDB, Cognito, SecretManager).
+API para la gestión de fondos de inversión, clientes, suscripciones, transacciones y notificaciones, utilizando .NET 8, Arquitectura Limpia (Clean Code), DDD (Domain-Driven Design) Patrones de diseño (Factory, Strategy, CQRS) con MediatR y Servicios de AWS (DynamoDB, Cognito, SecretManager, SES, SNS).
 
 - Patron de diseño CQRS para la separacion de responsabilidades de lectura y escritura (Command, Querys, Handlers).
 - Patron de diseño Factory para la definición de interfaces y expocisión de funcionalidad con implementacion de los contratos definidos (Repositorios).
