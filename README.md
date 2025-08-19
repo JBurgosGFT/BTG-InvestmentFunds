@@ -2,11 +2,11 @@
 
 API para la gestión de fondos de inversión, clientes, suscripciones, transacciones y notificaciones, utilizando .NET 8, Arquitectura Limpia (Clean Code), DDD (Domain-Driven Design) Patrones de diseño (Factory, Strategy, CQRS) con MediatR y Servicios de AWS (DynamoDB, Cognito, SecretManager).
 
--Patron de diseño CQRS para la separacion de responsabilidades de lectura y escritura (Command, Querys, Handlers).
--Patron de diseño Factory para la definición de interfaces y expocisión de funcionalidad con implementacion de los contratos definidos (Repositorios).
--Patron de diseño Strategy para definir un algoritmo, encapsularlos y hacerlo intercambiable segun la necesidad (Notificacion: Email, SMS).
--Arquitectura DDD para basarse en las reglas del negocio como funcion principal del proyecto (Entidades, Enum).
--Arquitectura limpia para la separacion de responsabilidad, mantenimiento de codigo y escalabilidad del proyecto (Presentacion, Aplicacion, Infrastructura, Dominio).
+- Patron de diseño CQRS para la separacion de responsabilidades de lectura y escritura (Command, Querys, Handlers).
+- Patron de diseño Factory para la definición de interfaces y expocisión de funcionalidad con implementacion de los contratos definidos (Repositorios).
+- Patron de diseño Strategy para definir un algoritmo, encapsularlos y hacerlo intercambiable segun la necesidad (Notificacion: Email, SMS).
+- Arquitectura DDD para basarse en las reglas del negocio como funcion principal del proyecto (Entidades, Enum).
+- Arquitectura limpia para la separacion de responsabilidad, mantenimiento de codigo y escalabilidad del proyecto (Presentacion, Aplicacion, Infrastructura, Dominio).
 
 ---
 
