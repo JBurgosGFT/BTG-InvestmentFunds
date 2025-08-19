@@ -58,6 +58,12 @@ Ejemplos de pruebas:
 
 ---
 
+## Infrastructura 
+
+El proyecto incluye un archivo .YAML (`InvestmentFunds.yaml`) el cuel define la infrastructura utilizada para los servicios de AWS con el fin de poder desplegarse mediante AWS CloudFormation.
+
+---
+
 ## Ejemplo de uso de la API
 
 ### Suscribir a un fondo
